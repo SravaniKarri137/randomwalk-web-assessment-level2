@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="game-layout">
+            <!-- Game Board Section -->
+            <div class="game-board">
+                <div class="turn-indicator">
+                    Current Turn: <span id="currentTurn">Player X</span>
+                </div>
+                <div class="board" id="board">
+                    <!-- 3x3 grid dynamically generated -->
+                </div>
+            </div>
+
+            <!-- Scorecard Section -->
+            <div class="scorecard">
+                <div class="scorecard-title">Scoreboard</div>
+                <div class="score">
+                    <div class="player">Player X</div>
+                    <div id="scoreX" class="score-value">0</div>
+                </div>
+                <div class="score">
+                    <div class="player">Player O</div>
+                    <div id="scoreO" class="score-value">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Winner Section -->
+        <div id="status" class="status"></div>
+        <button id="resetBtn" class="btn">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
